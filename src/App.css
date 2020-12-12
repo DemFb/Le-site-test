@@ -1,0 +1,234 @@
+                /*************************************** 
+
+                               GENERAL 
+
+                ***************************************/
+
+*, .App{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+                /*************************************** 
+
+                            SECTION HEADER.JS
+
+                ***************************************/
+
+.nav-link{
+  transition: all 0.3s ease ;
+}
+
+.nav-link:hover{
+  font-weight: bolder;
+  transition: all 0.3s ease ;
+}
+
+
+                /*************************************** 
+
+                            SECTION APP.JS
+
+                ***************************************/
+
+.landing{
+  background-image: url('./images/img2.gif');
+  background-size: 1430px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:0px ;
+  
+}    
+
+
+.container{
+  padding-bottom: 80px;
+}
+.image{
+  background-size: cover;
+}
+
+.display-4, .lead{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.buttonContainer button {
+  margin: 1.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+
+                /*************************************** 
+
+                            SECTION API.JS  
+
+                ***************************************/
+
+.Content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  opacity: 0;
+  animation: myfade 2s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes myfade {
+  0%   {top: 0px; opacity: 0;  }
+  100% {top: 0px; opacity: 1;}
+  }
+
+.Cards{
+  border: 1px grey solid;
+  border-radius: 0.5rem;
+  width: 500px;
+  height: 340px;
+  padding: 20px;
+  cursor: pointer;
+  margin: 1.5rem;
+  animation: mysmallCards 1s ease forwards;
+  transition: all 0.5s ease;
+  opacity: 0.4;
+}
+
+@keyframes mysmallCards {
+  0%   {top: 0px;  height: 400px; width: 560px;}
+  100% {top: 0px;  height: 340px; width: 500px;}
+  }
+
+.Cards:hover{
+  animation: mygrowthCards 1s ease forwards;
+  transition: all 0.5s ease;
+  opacity: 1;
+  
+}  
+
+@keyframes mygrowthCards {
+  0%   {top: 0px;  height: 340px; width: 500px; }
+  100% {top: 0px;  height: 400px; width: 560px;}
+  }
+ 
+
+
+.Cards h3 {
+  animation: mysmallTitle 1s ease forwards;
+  transition: all 0.5s ease;
+}
+
+@keyframes mysmallTitle {
+  0%   { font-size: 1.9rem; }
+  100% { font-size: 1.75rem;}
+  }
+
+.Cards h3:hover{
+  animation: mygrowthTitle 1s ease forwards;
+  color: rgb(54, 116, 187);
+  transition: all 0.5s ease;
+}  
+
+@keyframes mygrowthTitle {
+  0%   {font-size: 1.75rem; }
+  100% {font-size: 1.9rem;}
+  }
+
+                /*************************************** 
+
+                            SECTION UNIT.JS  
+
+                ***************************************/
+
+
+.speech{
+  height:700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speech h3 {
+  margin-bottom: 50px;
+}
+
+#phase1{
+  opacity: 0;
+  animation: opacityOn 6s ease forwards;
+  animation-delay: 1.5s;
+}
+
+#phase2{
+  opacity: 0;
+  animation: opacityOn 6s ease forwards;
+  animation-delay: 9.5s;
+  
+}
+
+#phase3{
+  opacity: 0;
+  animation: opacityOn 6s ease forwards;
+  animation-delay: 20s;
+}
+
+#phase4{
+  opacity: 0;
+  animation: opacityOn 6s ease forwards;
+  animation-delay: 27s;
+}
+
+#phase5{
+  opacity: 0;
+  animation: speachfade 1s ease forwards;
+  animation-delay: 28s;
+}
+
+#phase6{
+  opacity: 0;
+  animation: speachfade 1s ease forwards;
+  animation-delay: 40s;
+}
+@keyframes speachfade {
+  0%   {top: 0px; opacity: 0;}
+  100% {top: 0px; opacity: 1;}
+  }
+@keyframes opacityOn {
+  0% {
+      opacity: 0;
+  }
+
+  25% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+  }
+  75% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+                /*************************************** 
+
+                            SECTION FOOTER.JS  
+
+                ***************************************/
+
+.alert.alert-dark{
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
